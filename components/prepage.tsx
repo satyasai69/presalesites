@@ -81,7 +81,7 @@ useEffect(() => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
 
       // Request access to the user's MetaMask account
-      await provider.send("eth_requestAccounts", []);
+     // await provider.send("eth_requestAccounts", []);
 
       // Create a new contract instance
       const contract = new ethers.Contract(contractAddress, contractABI, provider);
